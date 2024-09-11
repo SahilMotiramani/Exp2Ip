@@ -1,0 +1,127 @@
+/* Web Font Inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Rounded Borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Styling for Company Name */
+.company-name {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* About Section */
+.about-section {
+    padding: 20px;
+}
+
+.about-text {
+    text-align: justify;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #282c34;
+}
+
+/* Services Section */
+.services-section {
+    padding: 20px;
+}
+
+.services-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #eaeaea;
+    border-radius: 10px; /* Rounded Borders */
+    cursor: pointer;
+}
+
+/* Pseudo-class - Hover Effect on List Items */
+.services-list li:hover {
+    background-color: #d4d4d4;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Pseudo-element for Email Styling */
+.email::before {
+    content: "📧 ";
+    color: #ffa500;
+    font-weight: bold;
+}
+
+/* Selectors Examples */
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Class Selector */
+.about-section {
+    background-color: #f9fafb;
+}
+
+/* ID Selector (if needed) */
+#footer-info {
+    color: grey;
+}
+
+/* Pseudo-class - Links */
+a:hover {
+    text-decoration: underline;
+    color: #ffa500;
+}
+
+/* First child pseudo-class */
+.services-list li:first-child {
+    background-color: #ffefdb;
+}
+
+/* Pseudo-element to add icons before list items */
+.services-list li::before {
+    content: "✔ ";
+    color: #4caf50;
+}
